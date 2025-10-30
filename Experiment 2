@@ -1,0 +1,141 @@
+// Experiment 2 code //
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Daily News</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #000;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        header p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        nav {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        iframe {
+            max-width: 600px;
+            width: 100%;
+            height: 350px;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        audio {
+            max-width: 400px;
+            margin: 20px 0;
+        }
+        footer {
+            padding: 20px;
+            margin: 20px;
+            border-top: 1px solid #ccc;
+        }
+        footer h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        a.read-more {
+            color: purple;
+            text-decoration: none;
+        }
+        a.read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Daily News</h1>
+        <p>Your Trusted Source for Latest Updates</p>
+    </header>
+
+    <nav>
+        <a href="#world">World</a> |
+        <a href="#sports">Sports</a> |
+        <a href="#entertainment">Entertainment</a> |
+        <a href="#podcast">Podcast</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="world">
+        <h2>World News</h2>
+        <p>Today's top headline: Global leaders meet to discuss climate change initiatives.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/BBC_World_News_red.svg/640px-BBC_World_News_red.svg.png" alt="BBC World News">
+        <a href="https://www.bbc.com" class="read-more">Read more on BBC</a>
+    </section>
+
+    <section id="sports">
+        <h2>Sports Update</h2>
+        <p>Highlights of yesterday's football match with thrilling last-minute goals!</p>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="entertainment">
+        <h2>Entertainment Buzz</h2>
+        <p>New movie trailer released today. Fans are excited!</p>
+        <video controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="podcast">
+        <h2>News Podcast</h2>
+        <p>Listen to today's top headlines:</p>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@globalnews.com</p>
+        <p>&copy; 2025 Global Daily News</p>
+    </footer>
+</body>
+</html>
